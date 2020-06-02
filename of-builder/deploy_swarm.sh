@@ -17,6 +17,7 @@ export OF_BUILDER_TAG=0.6.2
 # You should mount your .docker/config.json file here, but first make sure it is
 # readable. `chmod 777 $HOME/.docker/config.json`
 
+docker service rm of-builder
 docker service create --constraint="node.role==manager" \
  --name of-builder \
  --env insecure=false --detach=true --network func_functions \

@@ -3,7 +3,7 @@ provider:
   gateway: http://127.0.0.1:8080
 
 functions:
-  system-github-event:
+  github-event:
     lang: go
     handler: ./github-event
     image: functions/github-event:0.9.2
